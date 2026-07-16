@@ -1,0 +1,30 @@
+{
+  "name": "hrblizz-ess-leaves-automation",
+  "version": "1.0.0",
+  "description": "UI + API test automation for the HR Blizz ESS Leaves module (QA assignment)",
+  "license": "MIT",
+  "scripts": {
+    "setup": "bash scripts/setup.sh",
+    "test": "playwright test",
+    "test:sanity": "playwright test --project=sanity",
+    "test:regression": "playwright test --project=regression",
+    "test:api": "playwright test --project=api",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.58.2",
+    "@types/node": "24.10.1",
+    "prettier": "3.5.3",
+    "ts-node": "10.9.2",
+    "tsconfig-paths": "4.2.0",
+    "typescript": "5.8.3"
+  },
+  "dependencies": {
+    "date-fns": "^4.4.0",
+    "dotenv": "17.3.1",
+    "zod": "^4.4.3"
+  },
+  "engines": {
+    "node": ">=22.13.0 <25.0.0"
+  }
+}

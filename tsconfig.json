@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "paths": {
+      "@pages/*": ["./pages/*"],
+      "@support/*": ["./support/*"],
+      "@tests/*": ["./tests/*"],
+      "@test-data/*": ["./test-data/*"]
+    },
+    "types": ["node"],
+    "strict": false,
+    "noImplicitAny": false,
+    "strictNullChecks": false
+  }
+}
