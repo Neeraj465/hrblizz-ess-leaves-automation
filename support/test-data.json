@@ -1,0 +1,12 @@
+{
+  "users": {
+    "employee": {
+      "username": "demo+KS-01184@mercans.com",
+      "name": "Kellan Scott"
+    },
+    "manager": {
+      "username": "demo+SS-00384@mercans.com",
+      "name": "Sophia Smith"
+    }
+  }
+}
