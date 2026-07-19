@@ -14,9 +14,6 @@
   "devDependencies": {
     "@playwright/test": "1.58.2",
     "@types/node": "24.10.1",
-    "prettier": "3.5.3",
-    "ts-node": "10.9.2",
-    "tsconfig-paths": "4.2.0",
     "typescript": "5.8.3"
   },
   "dependencies": {
