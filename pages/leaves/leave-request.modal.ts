@@ -164,13 +164,10 @@ export default class LeaveRequestModal extends BasePage {
    * @returns The projected balance after the current selection is applied
    */
   async getBalanceAfter(): Promise<number> {
-    const raw = await this.page
-      .locator(this.LOCATORS.balanceBubble)
+    return Number(await this.page
+      .locator("#balance-bubble-after")
       .first()
-      .innerText();
-    const parts = raw.replace(/\s+/g, "").split(/→|->/);
-    const after = parts[parts.length - 1]?.match(/-?\d+(?:\.\d+)?/);
-    return after ? Number(after[0]) : Number.NaN;
+      .innerText()) ?? Number.NaN;
   }
 
   async isSubmitEnabled(): Promise<boolean> {
